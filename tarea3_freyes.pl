@@ -9,16 +9,11 @@ use HTML::Template;
 
 =head2 Reyes Alberdo Fernado 
 
-Programa que recibe como paramtro el archivo passwd, obtine sus datos
+Programa que recibe el archivo passwd, obtine sus datos
 y los muestra en una plantilla html.
 
 =cut
 
-my $archivoentrada=$ARGV;
-if (not defined $archivoentrada)
-	{	
-		die "ERROR Se necesita ingresa un archivo como parametro";
-	}
 open FH,'>',"pruebatarea.html" or die "Error";
         print FH &showForm();
 close FH;
@@ -53,8 +48,7 @@ sub infoPasswd{
 	my @desc=();
 	my @home=();
 	my @shell=();
-	#open(FCG,"<",$archivoentrada) or die "Error al abrir el archivo \n";
-	my $filename = $_[0];
+	my $filename = "passwd";
 	open FILE, "<",$filename;
 	my @file=(<FILE>);
 	for(@file){

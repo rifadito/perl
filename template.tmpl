@@ -3,16 +3,17 @@
     <fieldset>
        <legend><tmpl_var name="user"></legend>
           <form method=post action=#>
+	      <!--<input type="hidden" name="iface" value="<tmpl_var name=iface>" /> -->
               <br/>user:
-              <input type="text" name="user" value="<tmpl_var name=user>" placeholder="User" />
+              <input type="text" name="user" value="<tmpl_var name=user>" placeholder="user" />
               <br/>pass:
-              <input type="text" name="pass" value="<tmpl_var name=pass>" placeholder="Pass"/>
+              <input type="text" name="pass" value="<tmpl_var name=pass>" placeholder="pass"/>
               <br/>uid:
               <input type="text" name="uid" value="<tmpl_var name=uid>" placeholder="uid"/>
               <br/>gid:
               <input type="text" name="gid" value="<tmpl_var name=gid>" placeholder="gid"/>
               <br/>desc:
-              <input type="text" name="desc" value="<tmpl_var name=desc>" placeholder="NULL" />
+              <input type="text" name="desc" value="<tmpl_var name=desc>" placeholder="desc" />
               <br/>home:
               <input type="text" name="home" value="<tmpl_var name=home>" placeholder="home"/>
               <br/>shell:
