@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<meta charset="UTF-8">
+	<title>Suma de 2 numeros en PHP</title>
+	<script type="text/javascript">
+	function operacion(f,opera){
+		if(opera="suma"){
+				document.getElementById("oculto").innerHTML="<input type='hidden' name='selector' value='suma'>"
+		}
+		else{
+				document.getElementById("oculto").innerHTML="<input type='hidden' name='selector' value='resta'>"
+		}
+	}
+	</script>
+</head>
+<body>
+<H2>Suma de 2 numeros en PHP</H2>
+<form action="#" method="POST">
+	<table>
+	<tr>
+		<td><input type="text" name="numero1"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="numero2"></td>
+	</tr>
+	<div id="oculto">
+	</div>
+	<tr>
+	<!--
+		<td> <input type="hidden" name="selector" value="resta"> </td>
+	</tr>
+	<tr>
+		<td> <input type="submit" value="sumar"> </td>
+	</tr>
+	-->
+	<td> <input type="button" oneclick="operacion(this.form"suma")" value="sumar"> </td>
+	<td> <input type="button" oneclick="operacion(this.form"resta")" value="resta"> </td>
+</table>
+</form>
+</body>
+</html>
